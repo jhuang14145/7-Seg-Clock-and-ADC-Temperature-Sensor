@@ -1,9 +1,9 @@
 ;***************************************************************************
 ;*
 ;* Title: temp_meas
-;* Author: Jonathan Huang
+;* Author: jhuang14145
 ;* Version: 1.0
-;* Last updated: 11/18/2020
+;* Last updated: 11/18/2021
 ;* Target: atmega4809
 ;*
 ;* DESCRIPTION
@@ -14,7 +14,7 @@
 ;*
 ;*
 ;* VERSION HISTORY
-;* 1.0 Original version
+;* 1.3 Original version
 ;***************************************************************************
 
 .nolist
@@ -171,9 +171,9 @@ main_loop:
 ;* Polls ADC and then converts the value into a 7 segment version.
 ;* Then it stores the polling into le_display
 ;*
-;* Author: Jonathan huang
+;* Author: jhuang14145
 ;* Version: 1.0
-;* Last updated: 11/19/2020
+;* Last updated: 11/19/2021
 ;* Target:	ATmega4809
 ;* Number of words: 23
 ;* Number of cycles: 27
@@ -351,9 +351,9 @@ poll_bcd_hex:
 ;* stored in the least significant byte of the bcd_entries array. THen the
 ;* corresponding segment values for each digit in the bcd_entried display are 
 ;* writted into the led_display. Note: entry of a non-BCD value is ignored
-;* Author: Jonathan huang
+;* Author: jhuang14145
 ;* Version: 1.0
-;* Last updated: 10/29/2020
+;* Last updated: 10/29/2021
 ;* Target: a
 ;* Number of words:
 ;* Number of cycles:
@@ -423,9 +423,9 @@ clear:
 ;*
 ;* Description: Takes input from led_display, then converts to 7 seg, then
 ;*				outputs the function
-;* Author:						Jonathan Huang
+;* Author:						jhuang14145
 ;* Version:						1.0						
-;* Last updated:				10/29/2020
+;* Last updated:				10/29/2021
 ;* Target:						ATmega4809
 ;* Number of words:				
 ;* Number of cycles:			
@@ -542,7 +542,7 @@ inner_loop:
 ;* Description: Reverses the bit positions in a byte passed in.Bit 0
 ;* is bit 7, and bit 7 will be bit 0, ... , etc. 
 ;*
-;* Author:					Jonathan Huang
+;* Author:					jhuang14145
 ;* Version:					1.0
 ;* Last updated:			10/30/2020
 ;* Target:					ATmega4809
@@ -693,7 +693,7 @@ toggle_pin_ISR:
 ;*
 ;* Description: Turns all all segments and decimal for approx 1s. THen blanks
 ;*
-;* Author:					Jonathan Huang
+;* Author:					jhuang14145
 ;* Version:					1.0
 ;* Last updated:			11/18/2020
 ;* Target:					ATmega4809
